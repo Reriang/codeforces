@@ -23,11 +23,11 @@ struct UF
         if (p == q) return ;
         if (sz[p] < sz[q]) {
             id[p] = q;
-            sz[p] += sz[p];
+            sz[q] += sz[p];
             costs[q] = min(costs[p], costs[q]);
         } else {
             id[q] = p;
-            sz[p] = sz[q];
+            sz[p] += sz[q];
             costs[p] = min(costs[p], costs[q]);
         }
         countComponents--;

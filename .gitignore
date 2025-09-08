@@ -1,1 +1,5 @@
 **/build/
+forcer
+**/forcer
+*.txt
+**/*.txt
