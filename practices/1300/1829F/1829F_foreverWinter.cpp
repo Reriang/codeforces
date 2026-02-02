@@ -6,6 +6,7 @@ using namespace std;
 /*
 Codeforces: 1829F. Forever Winter
 Link: https://codeforces.com/problemset/problem/1829/F
+Tags: dfs, graphs math
 */
 
 class Graph
