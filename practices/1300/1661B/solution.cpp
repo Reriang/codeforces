@@ -13,7 +13,7 @@ void solve() {
             result *= 2;
         }
     }
-    cout << answer << '\n';
+    cout << answer << ' ';
 }
 
 int main() {
@@ -22,6 +22,7 @@ int main() {
 
     int t = 1; cin >> t;
     while (t--) solve();
+    cout << '\n';
     
     return 0;
 }

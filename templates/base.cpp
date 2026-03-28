@@ -1,3 +1,16 @@
+/*
+ * Problem: Codeforces: 
+ * Link: https://codeforces.com/
+ * Author: Helieox
+ * Date: 
+ * 
+ * Idea: 
+ * - 
+ * Complexity: 
+ * - Time: 
+ * - Space: 
+*/
+
 #include <iostream>
 using namespace std;
 

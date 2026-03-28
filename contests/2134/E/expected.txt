@@ -1,0 +1,17 @@
+
+
+throw 2
+
+swap 3
+throw 2
+
+throw 1
+
+! 2 1 2 1
+
+throw 1
+
+swap 1
+throw 1
+
+! 1 2
