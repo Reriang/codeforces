@@ -2,6 +2,11 @@
 
 <p align="center"><em>"This project contains some problems in codeforces with solution written by Reriang."</em></p>
 
+<p align="center">
+<img src="https://img.shields.io/badge/codeforces-START-00eaff?style=for-the-badge&logo=codeforces">
+<img src="https://img.shields.io/badge/NEOVIM-LIGHT_SPEED-39ff14?style=for-the-badge&logo=neovim&logoColor=white">
+<img src="https://img.shields.io/badge/C++-Compile Succeed-8f00ff?style=for-the-badge&logo=cplusplus&logoColor=white">
+</p>
 
 ## 📁 File Structure
 ```
