@@ -1,7 +1,5 @@
 <p align="center"><img src="./assets/lightning.jpg" width="150"><br><strong>⚡ Codeforces Runner ⚡</strong></p>
 
-![Codeforces Stats](https://codeforces-readme-stats.vercel.app/api/card?username=Reriang)
-
 <p align="center"><em>"This project contains some problems in codeforces with solution written by Reriang."</em></p>
 
 
