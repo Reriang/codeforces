@@ -2,7 +2,8 @@
 #include <vector>
 using namespace std;
 
-
+// TODO: comprehend solution
+// WARN: Error
 void solve() {
     size_t n; cin >> n;
     vector<size_t> a(n), b(n);
@@ -32,6 +33,8 @@ void solve() {
     }
     cout << ans << "\n";
 }
+
+// TODO: Add testcases
 
 int main()
 {
