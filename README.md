@@ -33,6 +33,7 @@ Each problems folder contains:
 git clone https://github.com/Reriang/codeforces.git
 cd codeforces
 ```
+
 2. Run a solution
 ```bash
 g++ solution.cpp -o solution
@@ -40,6 +41,7 @@ g++ solution.cpp -o solution
 diff expected.txt output.txt
 ```
 This will compare the program's output with the expected output.
+
 3. Using with my NeoVim setup
    - Open a problem:
 ```bash

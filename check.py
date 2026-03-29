@@ -1,5 +1,4 @@
 import os
-import csv
 import json
 
 problems = list()
@@ -26,5 +25,5 @@ contest_problems = check_solved("contests")
 practice_problems = check_solved("practices")
 
 problem_json = { "contest": contest_problems, "practice": practice_problems }
-with open("unsolved.json", mode="w") as file:
-    json.dump(problem_json, file)
+with open("unsolved.json", "w") as file:
+    json.dump(problem_json, file, indent=4, sort_keys=True)
