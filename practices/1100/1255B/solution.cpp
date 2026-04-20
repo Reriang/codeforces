@@ -1,32 +1,34 @@
-#include <bits/stdc++.h>
+/*
+ * ProblemID: Codeforces 1255B. Fridge Lockers
+ */
+#include <iostream>
+#include <vector>
 using namespace std;
 
-void solution(size_t n, size_t m, vector<int> &fridge) {
-    if (n == 2 || m < n) {
-        cout << -1 << '\n'; 
-        return ;
+void solve() {
+    size_t n, m; cin >> n >> m;
+    vector<int> fridges(n);
+    for (auto &e : fridges) cin >> e;
+
+    if (m < n || n < 3) cout << -1 << '\n';
+    else {
+        int ans = 0; 
+        for (auto e : fridges) ans += e;
+        cout << 2 * ans << '\n';
+        for (size_t i = 1; i < m; ++i) {
+            cout << i << ' ' << i + 1 << '\n';
+        }
+        cout << 1 << ' ' << m << '\n';
     }
-    int cost = accumulate(fridge.begin(), fridge.end(), 0);
-    cout << cost * 2 << '\n';
-    for (size_t i = 1; i < n; ++i) 
-        cout << i << ' ' << i + 1 << '\n';
-    cout << n << ' ' << 1 << '\n';
 }
 
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int t;
-    cin >> t;
+    int t = 1; cin >> t;
 
-    while (t--) {
-        size_t n, m;
-        cin >> n >> m;
+    while (t--) solve();
 
-        vector<int> fridge(n);
-        for (auto &e : fridge) cin >> e;
-        solution(n, m, fridge);
-    }
     return 0;
 }

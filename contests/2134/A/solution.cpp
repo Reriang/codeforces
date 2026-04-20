@@ -10,14 +10,11 @@ int main()
     while (t--) {
         cin >> n >> a >> b;
         if (n % 2 == b % 2) {
-            if (b >= a) 
-                cout << "YES\n";
-            else if (a % 2 == b % 2)
+            if (b >= a || a % 2 == b % 2) 
                 cout << "YES\n";
             else
                 cout << "NO\n";
-        }
-        else
+        } else
             cout << "NO\n";
     }
 

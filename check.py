@@ -2,6 +2,8 @@ import os
 import json
 
 problems = list()
+practices_to_remove = ["practices/1100/1255B"]
+contests_to_remove = ["contests/2134/B"]
 
 def check_solved(path: str) -> list:
     problems = list()
@@ -20,9 +22,20 @@ def check_solved(path: str) -> list:
                 else:
                     problems.append(root)
     return problems
+
+def remove_solved(problems : list, remove_list : list) -> list:
+    for item in remove_list:
+        try:
+            problems.remove(item)
+        except ValueError as e:
+            print(e)
+    return problems
     
 contest_problems = check_solved("contests")
 practice_problems = check_solved("practices")
+
+contest_problems = remove_solved(contest_problems, contests_to_remove)
+practice_problems = remove_solved(practice_problems, practices_to_remove)
 
 problem_json = { "contest": contest_problems, "practice": practice_problems }
 with open("unsolved.json", "w") as file:

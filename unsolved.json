@@ -1,7 +1,5 @@
 {
     "contest": [
-        "contests/2134/A",
-        "contests/2134/B",
         "contests/2134/D",
         "contests/2134/E",
         "contests/2134/F",
@@ -19,10 +17,7 @@
         "contests/2193/H"
     ],
     "practice": [
-        "practices/1100/1255B",
         "practices/1100/2078B",
-        "practices/1100/370A",
-        "practices/1300/1638C",
         "practices/1300/2129A"
     ]
 }

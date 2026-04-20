@@ -15,19 +15,17 @@
 using namespace std;
 
 void solve() {
-    size_t n, k;
-    cin >> n >> k;
+    size_t n; cin >> n;
+    long long k; cin >> k;
     vector<long long> arr(n);
     for (auto &e : arr) cin >> e;
 
-    if (n == 1) arr[0] += k;
+    for (auto &e : arr) {
+        long long c = e % (k + 1);
+        e += k * c;
+    }
 
-    if (k % 2 != 0) {
-        for (auto &e : arr)
-            if (e % 2 != 0) e += k;
-    } else if ()
-
-    for (auto &e : arr) cout << e << ' ';
+    for (auto e : arr) cout << e << ' ';
     cout << '\n';
 }
 
